@@ -8,8 +8,15 @@
 На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
 **Ответ**
-#Вывод конфигурации обоих роутеров <img src="img/router managment.png" width="100%">#
-#Также сам [файл](hsrp_advanced_voskoboynikov.pkt) с выполненным заданием.#
+#Запустим Python сервера на разных портах.#
+<img src="img/Запуск Python server 1.jpg" width="100%">
+<img src="img/Запуск Python server 2.jpg" width="100%">
+#Установим Haproxy#
+<img src="img/haproxy config.jpg" width="100%">
+#Запустим Haproxy и проведем проверку при помощи http://localhost:8080#
+<img src="img/haproxy chek.jpg" width="100%">
+#Видим что нам по очереди отвечают сначала первый севрер, потом второй.#
+#Конфигурация [Haproxy](img/haproxy.cfg)#
 
 **Задание 2**  
 
